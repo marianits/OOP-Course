@@ -1,0 +1,28 @@
+TASK 2
+--------------------------
+Create a custom value type
+--------------------------
+Create a custom value type that allows you to manage numeric values that represent the month of the year.
+
+1. There should be limit validations of the new data type (when you asign the month value)
+	If the value exceeds, there should be thrown an exception with the appropiate message
+
+2. The new data type should also have the MinValue and MaxValue properties (That are the Build-In Value type carateristics)
+
+		Month.MaxValue = 12
+		Month.MaxValue = 1
+
+3. There should be the possibility to aasign values to the new data type in a similar way as a integer (int) data type
+	Example:
+		int numero = 450;
+		Month mes = 10;
+		Month mes = new Month(10);
+
+	To achieve this, use the keywords "implicit operator"
+
+Tips:
+	Look how the Int32 (int) data type works and alse review its structure
+
+Extra points
+	Month month = 1;
+	Console.Writeline(month); // Enero
